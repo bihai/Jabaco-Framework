@@ -1,0 +1,3890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jabadoc>
+	<admin creation="Sun Apr 06 17:38:07 EDT 2014" xsdversion="1.0.0" version="2.1.0" />
+	<class superclass="VBEnumClass" visibility="public" package="VBA" serializable="true" superclassfulltype="VBA.VBEnumClass" fulltype="VBA.VBVarType" type="VBVarType">
+		<fields>
+			<field static="true" visibility="public" name="vbEmpty" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbNull" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbInteger" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbLong" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbSingle" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbDouble" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbCurrency" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbDate" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbString" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbObject" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbError" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbBoolean" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbVariant" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbDataObject" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbDecimal" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbByte" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbUserDefinedType" fulltype="VBA.VBVarType" type="VBVarType" />
+			<field static="true" visibility="public" name="vbArray" fulltype="VBA.VBVarType" type="VBVarType" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="VBVarType" />
+			<constructor visibility="public" name="VBVarType">
+				<params>
+					<param name="iVBVarType" fulltype="int" type="int" />
+				</params>
+			</constructor>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.VBVariant" type="VBVariant">
+		<implements>
+			<interface fulltype="java.lang.Comparable" type="Comparable" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="VBVariant" />
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="i" fulltype="int" type="int" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="l" fulltype="long" type="long" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="f" fulltype="float" type="float" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="d" fulltype="double" type="double" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="d" fulltype="java.util.Date" type="Date" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="s" fulltype="java.lang.String" type="String" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="o" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="e" fulltype="java.lang.Throwable" type="Throwable" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="b" fulltype="boolean" type="boolean" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="b" fulltype="byte" type="byte" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="udt" fulltype="VBA.VBTypeClass" type="VBTypeClass" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBVariant">
+				<params>
+					<param name="a" fulltype="VBA.IVBArray" type="IVBArray" />
+				</params>
+			</constructor>
+			<method visibility="public" name="getValClass" fulltype="java.lang.Class" type="Class" />
+			<method visibility="public" name="getValObject" fulltype="java.lang.Object" type="Object" />
+			<method visibility="public" name="VType" fulltype="int" type="int" />
+			<method visibility="public" name="innerVarType" fulltype="int" type="int">
+				<exceptions>
+					<exception fulltype="java.lang.ClassCastException" type="ClassCastException" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="equals" fulltype="boolean" type="boolean">
+				<params>
+					<param name="TestVal" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method visibility="public" name="compareTo" fulltype="int" type="int">
+				<params>
+					<param name="TestVal" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.ClassCastException" type="ClassCastException" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="compareTo" fulltype="int" type="int">
+				<params>
+					<param name="TestVal" fulltype="java.lang.Object" type="Object" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.ClassCastException" type="ClassCastException" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="iterator" fulltype="java.util.Iterator" type="Iterator" />
+			<method static="true" visibility="public" name="valueOf" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="i" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="valueOf" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="l" fulltype="long" type="long" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="valueOf" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="f" fulltype="float" type="float" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="valueOf" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="d" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="valueOf" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="d" fulltype="java.util.Date" type="Date" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="valueOf" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="b" fulltype="boolean" type="boolean" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="valueOf" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="o" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="valueOf" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="s" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="valueOf" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="v" fulltype="VBA.IVBArray" type="IVBArray" />
+				</params>
+			</method>
+			<method visibility="public" name="isString" fulltype="boolean" type="boolean" />
+			<method visibility="public" name="isDate" fulltype="boolean" type="boolean" />
+			<method visibility="public" name="toDate" fulltype="java.util.Date" type="Date" />
+			<method visibility="public" name="intValue" fulltype="int" type="int" />
+			<method visibility="public" name="longValue" fulltype="long" type="long" />
+			<method visibility="public" name="doubleValue" fulltype="double" type="double" />
+			<method visibility="public" name="isNumeric" fulltype="boolean" type="boolean" />
+			<method visibility="public" name="toObject" fulltype="java.lang.Object" type="Object" />
+			<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="i" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="l" fulltype="long" type="long" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="f" fulltype="float" type="float" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="d" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="d" fulltype="java.util.Date" type="Date" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="s" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="o" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="e" fulltype="java.lang.Throwable" type="Throwable" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="b" fulltype="boolean" type="boolean" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="var" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="b" fulltype="byte" type="byte" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="udt" fulltype="VBA.VBTypeClass" type="VBTypeClass" />
+				</params>
+			</method>
+			<method visibility="public" name="setVal" fulltype="void" type="void">
+				<params>
+					<param name="a" fulltype="VBA.IVBArray" type="IVBArray" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" serializable="true" superclassfulltype="java.lang.Object" fulltype="VBA.VBTypeClass" type="VBTypeClass">
+		<implements>
+			<interface fulltype="java.lang.Cloneable" type="Cloneable" />
+			<interface fulltype="java.io.Serializable" type="Serializable" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="VBTypeClass" />
+			<method visibility="public" name="clone" fulltype="java.lang.Object" type="Object" />
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.VBString" type="VBString">
+		<methods>
+			<constructor visibility="public" name="VBString" />
+			<method static="true" visibility="public" name="appendStrings" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="addString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="divString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="mulString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="subString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="modString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="andString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="orString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="xorString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="notString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="shiftlString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="shiftrString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="equalStringsGL" fulltype="boolean" type="boolean">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="equalStringsUG" fulltype="boolean" type="boolean">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="equalStringsGG" fulltype="boolean" type="boolean">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="equalStringsGR" fulltype="boolean" type="boolean">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="equalStringsKL" fulltype="boolean" type="boolean">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="equalStringsKG" fulltype="boolean" type="boolean">
+				<params>
+					<param name="s1" fulltype="java.lang.String" type="String" />
+					<param name="s2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="VBEnumClass" visibility="public" package="VBA" serializable="true" superclassfulltype="VBA.VBEnumClass" fulltype="VBA.VBStrConv" type="VBStrConv">
+		<fields>
+			<field static="true" visibility="public" name="vbUpperCase" fulltype="VBA.VBStrConv" type="VBStrConv" />
+			<field static="true" visibility="public" name="vbLowerCase" fulltype="VBA.VBStrConv" type="VBStrConv" />
+			<field static="true" visibility="public" name="vbProperCase" fulltype="VBA.VBStrConv" type="VBStrConv" />
+			<field static="true" visibility="public" name="vbWide" fulltype="VBA.VBStrConv" type="VBStrConv" />
+			<field static="true" visibility="public" name="vbNarrow" fulltype="VBA.VBStrConv" type="VBStrConv" />
+			<field static="true" visibility="public" name="vbKatakana" fulltype="VBA.VBStrConv" type="VBStrConv" />
+			<field static="true" visibility="public" name="vbHiragana" fulltype="VBA.VBStrConv" type="VBStrConv" />
+			<field static="true" visibility="public" name="vbUnicode" fulltype="VBA.VBStrConv" type="VBStrConv" />
+			<field static="true" visibility="public" name="vbFromUnicode" fulltype="VBA.VBStrConv" type="VBStrConv" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="VBStrConv" />
+			<constructor visibility="public" name="VBStrConv">
+				<params>
+					<param name="iVBStrConv" fulltype="int" type="int" />
+				</params>
+			</constructor>
+		</methods>
+	</class>
+
+	<class superclass="VBArray" visibility="public" package="VBA" serializable="true" superclassfulltype="VBA.VBArray" fulltype="VBA.VBParamArray" type="VBParamArray">
+		<methods>
+			<constructor visibility="public" name="VBParamArray" />
+		</methods>
+	</class>
+
+	<class superclass="VBEnumClass" visibility="public" package="VBA" serializable="true" superclassfulltype="VBA.VBEnumClass" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle">
+		<fields>
+			<field static="true" visibility="public" name="vbApplicationModal" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbAbortRetryIgnore" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbCritical" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbDefaultButton1" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbDefaultButton2" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbDefaultButton3" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbDefaultButton4" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbExclamation" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbInformation" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbMsgBoxHelpButton" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbMsgBoxRight" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbMsgBoxRtlReading" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbMsgBoxSetForeground" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbOKCancel" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbOKOnly" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbQuestion" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbRetryCancel" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbSystemModal" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbYesNo" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+			<field static="true" visibility="public" name="vbYesNoCancel" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="VBMsgBoxStyle" />
+			<constructor visibility="public" name="VBMsgBoxStyle">
+				<params>
+					<param name="iVBMsgBoxStyle" fulltype="int" type="int" />
+				</params>
+			</constructor>
+		</methods>
+	</class>
+
+	<class superclass="VBEnumClass" visibility="public" package="VBA" serializable="true" superclassfulltype="VBA.VBEnumClass" fulltype="VBA.VBMsgBoxResult" type="VBMsgBoxResult">
+		<fields>
+			<field static="true" visibility="public" name="vbOK" fulltype="VBA.VBMsgBoxResult" type="VBMsgBoxResult" />
+			<field static="true" visibility="public" name="vbCancel" fulltype="VBA.VBMsgBoxResult" type="VBMsgBoxResult" />
+			<field static="true" visibility="public" name="vbAbort" fulltype="VBA.VBMsgBoxResult" type="VBMsgBoxResult" />
+			<field static="true" visibility="public" name="vbRetry" fulltype="VBA.VBMsgBoxResult" type="VBMsgBoxResult" />
+			<field static="true" visibility="public" name="vbIgnore" fulltype="VBA.VBMsgBoxResult" type="VBMsgBoxResult" />
+			<field static="true" visibility="public" name="vbYes" fulltype="VBA.VBMsgBoxResult" type="VBMsgBoxResult" />
+			<field static="true" visibility="public" name="vbNo" fulltype="VBA.VBMsgBoxResult" type="VBMsgBoxResult" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="VBMsgBoxResult" />
+			<constructor visibility="public" name="VBMsgBoxResult">
+				<params>
+					<param name="iVBMsgBoxResult" fulltype="int" type="int" />
+				</params>
+			</constructor>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.VBMouseEvent" type="VBMouseEvent">
+		<methods>
+			<constructor visibility="public" name="VBMouseEvent" />
+			<method static="true" visibility="public" name="getVBMouseButton" fulltype="int" type="int">
+				<params>
+					<param name="e" fulltype="java.awt.event.MouseEvent" type="MouseEvent" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getVBMouseShift" fulltype="int" type="int">
+				<params>
+					<param name="e" fulltype="java.awt.event.MouseEvent" type="MouseEvent" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="VBVariant" visibility="public" package="VBA" serializable="true" superclassfulltype="VBA.VBVariant" fulltype="VBA.VBEnumClass" type="VBEnumClass">
+		<implements>
+			<interface fulltype="VBA.IResource" type="IResource" />
+			<interface fulltype="java.io.Serializable" type="Serializable" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="VBEnumClass" />
+			<constructor visibility="public" name="VBEnumClass">
+				<params>
+					<param name="i" fulltype="int" type="int" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBEnumClass">
+				<params>
+					<param name="l" fulltype="long" type="long" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBEnumClass">
+				<params>
+					<param name="s" fulltype="java.lang.String" type="String" />
+				</params>
+			</constructor>
+			<method visibility="public" name="getName" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>returns the name of this constant</description>
+				</comment>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getEnumNames" fulltype="java.lang.String[]" type="String">
+				<comment>
+					<description>returns an array of names of all constant static fields of the enum</description>
+				</comment>
+			</method>
+			<method visibility="public" name="getEnumValues" fulltype="VBA.VBVariant[]" type="VBVariant">
+				<comment>
+					<description>returns an array of values of all constant static fields of the enum</description>
+				</comment>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="VBEnumClass" visibility="public" package="VBA" serializable="true" superclassfulltype="VBA.VBEnumClass" fulltype="VBA.VBDayOfWeek" type="VBDayOfWeek">
+		<fields>
+			<field static="true" visibility="public" name="vbUseSystemDayOfWeek" fulltype="VBA.VBDayOfWeek" type="VBDayOfWeek" />
+			<field static="true" visibility="public" name="vbSunday" fulltype="VBA.VBDayOfWeek" type="VBDayOfWeek" />
+			<field static="true" visibility="public" name="vbMonday" fulltype="VBA.VBDayOfWeek" type="VBDayOfWeek" />
+			<field static="true" visibility="public" name="vbTuesday" fulltype="VBA.VBDayOfWeek" type="VBDayOfWeek" />
+			<field static="true" visibility="public" name="vbWednesday" fulltype="VBA.VBDayOfWeek" type="VBDayOfWeek" />
+			<field static="true" visibility="public" name="vbThursday" fulltype="VBA.VBDayOfWeek" type="VBDayOfWeek" />
+			<field static="true" visibility="public" name="vbFriday" fulltype="VBA.VBDayOfWeek" type="VBDayOfWeek" />
+			<field static="true" visibility="public" name="vbSaturday" fulltype="VBA.VBDayOfWeek" type="VBDayOfWeek" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="VBDayOfWeek" />
+			<constructor visibility="public" name="VBDayOfWeek">
+				<params>
+					<param name="iVBDayOfWeek" fulltype="int" type="int" />
+				</params>
+			</constructor>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.VBDateParser" type="VBDateParser">
+		<comment>
+			<description>A parser for arbitrary date/time strings.</description>
+		</comment>
+		<fields>
+			<field final="true" static="true" const="4" visibility="public" name="YEAR_BEFORE_MONTH" constexpr="4" fulltype="int" type="int">
+				<comment>
+					<description>bit indicating that the year comes before the month.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" const="2" visibility="public" name="YEAR_BEFORE_DAY" constexpr="2" fulltype="int" type="int">
+				<comment>
+					<description>bit indicating that the year comes before the day.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" const="1" visibility="public" name="MONTH_BEFORE_DAY" constexpr="1" fulltype="int" type="int">
+				<comment>
+					<description>bit indicating that the month comes before the day.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" const="0" visibility="public" name="YEAR_AFTER_MONTH" constexpr="0" fulltype="int" type="int">
+				<comment>
+					<description>bit indicating that the year comes after the month.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" const="0" visibility="public" name="YEAR_AFTER_DAY" constexpr="0" fulltype="int" type="int">
+				<comment>
+					<description>bit indicating that the year comes after the day.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" const="0" visibility="public" name="MONTH_AFTER_DAY" constexpr="0" fulltype="int" type="int">
+				<comment>
+					<description>bit indicating that the month comes after the day.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" const="0" visibility="public" name="DD_MM_YY" constexpr="0" fulltype="int" type="int">
+				<comment>
+					<description>day/month/year order.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" const="1" visibility="public" name="MM_DD_YY" constexpr="1" fulltype="int" type="int">
+				<comment>
+					<description>month/day/year order.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" const="3" visibility="public" name="MM_YY_DD" constexpr="3" fulltype="int" type="int">
+				<comment>
+					<description>month/year/day order.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" const="4" visibility="public" name="DD_YY_MM" constexpr="4" fulltype="int" type="int">
+				<comment>
+					<description>day/year/month order.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" const="6" visibility="public" name="YY_DD_MM" constexpr="6" fulltype="int" type="int">
+				<comment>
+					<description>year/day/month order.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" const="7" visibility="public" name="YY_MM_DD" constexpr="7" fulltype="int" type="int">
+				<comment>
+					<description>year/month/day order.</description>
+				</comment>
+			</field>
+		</fields>
+		<methods>
+			<constructor visibility="public" name="VBDateParser" />
+			<method final="true" static="true" visibility="public" name="getOrderString" returncomment="order string" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Return a string representation of the order value.</description>
+					<attribute name="@param">
+						<description>order order</description>
+					</attribute>
+					<attribute name="@return">
+						<description>order string</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="order" comment="order" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="monthNameToNumber" returncomment="the numeric month, or &lt;tt&gt;CalendarParser.UNSET&lt;/tt&gt; if the
+         supplied string is not a valid month name." fulltype="int" type="int">
+				<comment>
+					<description>Convert the supplied month name to its numeric representation.
+ &lt;br&gt;
+ For example, &lt;tt&gt;&quot;January&quot;&lt;/tt&gt; (or any substring) would return
+ &lt;tt&gt;1&lt;/tt&gt; and &lt;tt&gt;&quot;December&quot;&lt;/tt&gt; would return &lt;tt&gt;12&lt;/tt&gt;.</description>
+					<attribute name="@param">
+						<description>str month name</description>
+					</attribute>
+					<attribute name="@return">
+						<description>the numeric month, or &lt;tt&gt;CalendarParser.UNSET&lt;/tt&gt; if the
+         supplied string is not a valid month name.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="str" comment="month name" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method final="true" static="true" visibility="public" name="parse" returncomment="parsed date" fulltype="java.util.GregorianCalendar" type="GregorianCalendar">
+				<comment>
+					<description>Extract a date from a string, defaulting to YY-MM-DD
+ order for all-numeric strings.</description>
+					<attribute name="@param">
+						<description>dateStr date string</description>
+					</attribute>
+					<attribute name="@return">
+						<description>parsed date</description>
+					</attribute>
+					<attribute name="@throws">
+						<description>Exception if there was a problem
+                             parsing the string.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="dateStr" comment="date string" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception comment="if there was a problem
+                             parsing the string." fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method final="true" static="true" visibility="public" name="parse" returncomment="parsed date" fulltype="java.util.GregorianCalendar" type="GregorianCalendar">
+				<comment>
+					<description>Extract a date from a string.</description>
+					<attribute name="@param">
+						<description>dateStr date string</description>
+					</attribute>
+					<attribute name="@param">
+						<description>order order in which pieces of numeric strings
+              are assigned (should be one of &lt;tt&gt;YY_MM_DD&lt;/tt&gt;,
+              &lt;tt&gt;MM_DD_YY&lt;/tt&gt;, etc.)</description>
+					</attribute>
+					<attribute name="@return">
+						<description>parsed date</description>
+					</attribute>
+					<attribute name="@throws">
+						<description>Exception if there was a problem
+                             parsing the string.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="dateStr" comment="date string" fulltype="java.lang.String" type="String" />
+					<param name="order" comment="order in which pieces of numeric strings
+              are assigned (should be one of &lt;tt&gt;YY_MM_DD&lt;/tt&gt;,
+              &lt;tt&gt;MM_DD_YY&lt;/tt&gt;, etc.)" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception comment="if there was a problem
+                             parsing the string." fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method final="true" static="true" visibility="public" name="parse" returncomment="parsed date" fulltype="java.util.GregorianCalendar" type="GregorianCalendar">
+				<comment>
+					<description>Extract a date from a string.</description>
+					<attribute name="@param">
+						<description>dateStr date string</description>
+					</attribute>
+					<attribute name="@param">
+						<description>order order in which pieces of numeric strings
+              are assigned (should be one of &lt;tt&gt;YY_MM_DD&lt;/tt&gt;,
+              &lt;tt&gt;MM_DD_YY&lt;/tt&gt;, etc.)</description>
+					</attribute>
+					<attribute name="@param">
+						<description>ignoreChanges if &lt;tt&gt;true&lt;/tt&gt;, ignore date changes such as
+                      &lt;tt&gt;Feb 31&lt;/tt&gt; being changed to &lt;tt&gt;Mar 3&lt;/tt&gt;.</description>
+					</attribute>
+					<attribute name="@return">
+						<description>parsed date</description>
+					</attribute>
+					<attribute name="@throws">
+						<description>Exception if there was a problem
+                                 parsing the string.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="dateStr" comment="date string" fulltype="java.lang.String" type="String" />
+					<param name="order" comment="order in which pieces of numeric strings
+              are assigned (should be one of &lt;tt&gt;YY_MM_DD&lt;/tt&gt;,
+              &lt;tt&gt;MM_DD_YY&lt;/tt&gt;, etc.)" fulltype="int" type="int" />
+					<param name="ignoreChanges" comment="if &lt;tt&gt;true&lt;/tt&gt;, ignore date changes such as
+                      &lt;tt&gt;Feb 31&lt;/tt&gt; being changed to &lt;tt&gt;Mar 3&lt;/tt&gt;." fulltype="boolean" type="boolean" />
+				</params>
+				<exceptions>
+					<exception comment="if there was a problem
+                                 parsing the string." fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method final="true" static="true" visibility="public" name="prettyString" returncomment="a printable string." fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Return a printable representation of the date.</description>
+					<attribute name="@param">
+						<description>cal GregorianCalendar to convert to a string</description>
+					</attribute>
+					<attribute name="@return">
+						<description>a printable string.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="cal" comment="GregorianCalendar to convert to a string" fulltype="java.util.GregorianCalendar" type="GregorianCalendar" />
+				</params>
+			</method>
+			<method final="true" static="true" visibility="public" name="toString" returncomment="the basic string." fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Return a basic representation of the string.</description>
+					<attribute name="@param">
+						<description>cal GregorianCalendar to convert to a string</description>
+					</attribute>
+					<attribute name="@return">
+						<description>the basic string.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="cal" comment="GregorianCalendar to convert to a string" fulltype="java.util.GregorianCalendar" type="GregorianCalendar" />
+				</params>
+			</method>
+			<method final="true" static="true" visibility="public" name="toSQLString" returncomment="the SQL-friendly string." fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Return a string representation of the date suitable for use in
+ an SQL statement.</description>
+					<attribute name="@param">
+						<description>cal GregorianCalendar to convert to a string</description>
+					</attribute>
+					<attribute name="@return">
+						<description>the SQL-friendly string.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="cal" comment="GregorianCalendar to convert to a string" fulltype="java.util.GregorianCalendar" type="GregorianCalendar" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="VBEnumClass" visibility="public" package="VBA" serializable="true" superclassfulltype="VBA.VBEnumClass" fulltype="VBA.VBCompareMethod" type="VBCompareMethod">
+		<fields>
+			<field static="true" visibility="public" name="vbBinaryCompare" fulltype="VBA.VBCompareMethod" type="VBCompareMethod" />
+			<field static="true" visibility="public" name="vbTextCompare" fulltype="VBA.VBCompareMethod" type="VBCompareMethod" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="VBCompareMethod" />
+			<constructor visibility="public" name="VBCompareMethod">
+				<params>
+					<param name="iVBCompareMethod" fulltype="int" type="int" />
+				</params>
+			</constructor>
+		</methods>
+	</class>
+
+	<class superclass="VBEnumClass" visibility="public" package="VBA" serializable="true" superclassfulltype="VBA.VBEnumClass" fulltype="VBA.VBCallType" type="VBCallType">
+		<fields>
+			<field static="true" visibility="public" name="VBMethod" fulltype="VBA.VBCallType" type="VBCallType" />
+			<field static="true" visibility="public" name="VBGet" fulltype="VBA.VBCallType" type="VBCallType" />
+			<field static="true" visibility="public" name="VBLet" fulltype="VBA.VBCallType" type="VBCallType" />
+			<field static="true" visibility="public" name="VBSet" fulltype="VBA.VBCallType" type="VBCallType" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="VBCallType" />
+			<constructor visibility="public" name="VBCallType">
+				<params>
+					<param name="iVBCallType" fulltype="int" type="int" />
+				</params>
+			</constructor>
+		</methods>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.VBArrayVariant" type="VBArrayVariant">
+		<implements>
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.VBArrayString" type="VBArrayString">
+		<implements>
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.VBArraySingle" type="VBArraySingle">
+		<implements>
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.VBArrayObject" type="VBArrayObject">
+		<implements>
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.VBArrayLong" type="VBArrayLong">
+		<implements>
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.VBArrayIterator" type="VBArrayIterator">
+		<implements>
+			<interface fulltype="java.util.Iterator" type="Iterator" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="VBArrayIterator">
+				<params>
+					<param name="refObject" fulltype="java.lang.Object[]" type="Object" />
+				</params>
+			</constructor>
+			<method visibility="public" name="hasNext" fulltype="boolean" type="boolean" />
+			<method visibility="public" name="next" fulltype="java.lang.Object" type="Object" />
+			<method visibility="public" name="remove" fulltype="void" type="void" />
+		</methods>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.VBArrayInteger" type="VBArrayInteger">
+		<implements>
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.VBArrayDouble" type="VBArrayDouble">
+		<implements>
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.VBArrayDate" type="VBArrayDate">
+		<implements>
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.VBArrayChar" type="VBArrayChar">
+		<implements>
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.VBArrayByte" type="VBArrayByte">
+		<implements>
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.VBArrayBoolean" type="VBArrayBoolean">
+		<implements>
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" serializable="true" superclassfulltype="java.lang.Object" fulltype="VBA.VBArray" type="VBArray">
+		<implements>
+			<interface fulltype="java.lang.Cloneable" type="Cloneable" />
+			<interface fulltype="java.io.Serializable" type="Serializable" />
+			<interface fulltype="VBA.VBArrayString" type="VBArrayString" />
+			<interface fulltype="VBA.VBArrayVariant" type="VBArrayVariant" />
+			<interface fulltype="VBA.VBArrayChar" type="VBArrayChar" />
+			<interface fulltype="VBA.VBArrayByte" type="VBArrayByte" />
+			<interface fulltype="VBA.VBArrayDate" type="VBArrayDate" />
+			<interface fulltype="VBA.VBArrayDouble" type="VBArrayDouble" />
+			<interface fulltype="VBA.VBArrayInteger" type="VBArrayInteger" />
+			<interface fulltype="VBA.VBArrayLong" type="VBArrayLong" />
+			<interface fulltype="VBA.VBArrayBoolean" type="VBArrayBoolean" />
+			<interface fulltype="VBA.VBArraySingle" type="VBArraySingle" />
+			<interface fulltype="VBA.VBArrayObject" type="VBArrayObject" />
+			<interface fulltype="VBA.IVBArray" type="IVBArray" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="VBArray" />
+			<constructor visibility="public" name="VBArray">
+				<comment>
+					<description>VBARRAY CONSTRUCTORS</description>
+				</comment>
+				<params>
+					<param name="refClass" fulltype="java.lang.Class" type="Class" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="refLBound" fulltype="int" type="int" />
+					<param name="refUBound" fulltype="int" type="int" />
+					<param name="refDimension" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="strVal" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="val" fulltype="java.lang.String[]" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="val" fulltype="long[]" type="long" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="val" fulltype="int[]" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="val" fulltype="double[]" type="double" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="val" fulltype="float[]" type="float" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="val" fulltype="byte[]" type="byte" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="val" fulltype="java.lang.Object[]" type="Object" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="val" fulltype="boolean[]" type="boolean" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="val" fulltype="java.util.Date[]" type="Date" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<constructor visibility="public" name="VBArray">
+				<params>
+					<param name="val" fulltype="VBA.VBVariant[]" type="VBVariant" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</constructor>
+			<method visibility="public" name="byteArray" fulltype="byte[]" type="byte">
+				<comment>
+					<description>CREATE JAVA-ARRAY</description>
+				</comment>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="boolArray" fulltype="boolean[]" type="boolean">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="intArray" fulltype="int[]" type="int">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="doubleArray" fulltype="double[]" type="double">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="longArray" fulltype="long[]" type="long">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="floatArray" fulltype="float[]" type="float">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="stringArray" fulltype="java.lang.String[]" type="String">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="objectArray" fulltype="java.lang.Object[]" type="Object">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="objectArrayClone" fulltype="java.lang.Object[]" type="Object" />
+			<method visibility="public" name="clone" fulltype="java.lang.Object" type="Object" />
+			<method visibility="public" name="cloneSimple" fulltype="VBA.VBArray" type="VBArray">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="cloneArray" fulltype="VBA.VBArray" type="VBArray">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="iterator" fulltype="java.util.Iterator" type="Iterator" />
+			<method visibility="public" name="valueOf" fulltype="java.lang.Object" type="Object">
+				<comment>
+					<description>VBARRAY METHODS</description>
+				</comment>
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueNative" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method visibility="public" name="setValue" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="java.lang.Object" type="Object" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getLBound" fulltype="int" type="int">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getLBound" fulltype="int" type="int">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getUBound" fulltype="int" type="int">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getUBound" fulltype="int" type="int">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getUBoundInternal" fulltype="int" type="int">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getBase" fulltype="int" type="int" />
+			<method visibility="public" name="setBound" fulltype="void" type="void">
+				<params>
+					<param name="iNewLBound" fulltype="int" type="int" />
+					<param name="iNewUBound" fulltype="int" type="int" />
+					<param name="bPreserve" fulltype="boolean" type="boolean" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getFromDimension" fulltype="VBA.VBArray" type="VBArray">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="addDimension" fulltype="void" type="void">
+				<params>
+					<param name="iNewLBound" fulltype="int" type="int" />
+					<param name="iNewUBound" fulltype="int" type="int" />
+					<param name="bPreserve" fulltype="boolean" type="boolean" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfDbl" fulltype="double" type="double">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueDbl" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="double" type="double" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfInt" fulltype="int" type="int">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueInt" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfLng" fulltype="long" type="long">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueLng" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="long" type="long" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfObj" fulltype="java.lang.Object" type="Object">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueObj" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="java.lang.Object" type="Object" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfStr" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfVar" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueVar" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueStr" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="addStringItem" fulltype="void" type="void">
+				<params>
+					<param name="NewItem" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="toDebugString" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>TO STRING</description>
+				</comment>
+			</method>
+			<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+			<method static="true" visibility="public" name="createParamArray" fulltype="VBA.VBArrayVariant" type="VBArrayVariant">
+				<comment>
+					<description>STATIC CREATE VBARRY</description>
+				</comment>
+				<params>
+					<param name="LBound" fulltype="int" type="int" />
+					<param name="UBound" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createParamArray" fulltype="VBA.VBArrayVariant" type="VBArrayVariant">
+				<params>
+					<param name="UBound" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArray" type="VBArray">
+				<params>
+					<param name="val" fulltype="java.lang.Class" type="Class" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArrayByte" type="VBArrayByte">
+				<params>
+					<param name="strVal" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArray" type="VBArray">
+				<params>
+					<param name="objVal" fulltype="java.lang.Object[]" type="Object" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArrayString" type="VBArrayString">
+				<params>
+					<param name="strVal" fulltype="java.lang.String[]" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArrayInteger" type="VBArrayInteger">
+				<params>
+					<param name="val" fulltype="int[]" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArrayBoolean" type="VBArrayBoolean">
+				<params>
+					<param name="val" fulltype="boolean[]" type="boolean" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArraySingle" type="VBArraySingle">
+				<params>
+					<param name="val" fulltype="float[]" type="float" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArrayLong" type="VBArrayLong">
+				<params>
+					<param name="val" fulltype="long[]" type="long" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArrayDouble" type="VBArrayDouble">
+				<params>
+					<param name="val" fulltype="double[]" type="double" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArrayByte" type="VBArrayByte">
+				<params>
+					<param name="val" fulltype="byte[]" type="byte" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArrayDate" type="VBArrayDate">
+				<params>
+					<param name="val" fulltype="java.util.Date[]" type="Date" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="createVBArray" fulltype="VBA.VBArrayVariant" type="VBArrayVariant">
+				<params>
+					<param name="val" fulltype="VBA.VBVariant[]" type="VBVariant" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="VBEnumClass" visibility="public" package="VBA" serializable="true" superclassfulltype="VBA.VBEnumClass" fulltype="VBA.VBAppWinStyle" type="VBAppWinStyle">
+		<fields>
+			<field static="true" visibility="public" name="vbHide" fulltype="VBA.VBAppWinStyle" type="VBAppWinStyle" />
+			<field static="true" visibility="public" name="vbNormalFocus" fulltype="VBA.VBAppWinStyle" type="VBAppWinStyle" />
+			<field static="true" visibility="public" name="vbMinimizedFocus" fulltype="VBA.VBAppWinStyle" type="VBAppWinStyle" />
+			<field static="true" visibility="public" name="vbMaximizedFocus" fulltype="VBA.VBAppWinStyle" type="VBAppWinStyle" />
+			<field static="true" visibility="public" name="vbNormalNoFocus" fulltype="VBA.VBAppWinStyle" type="VBAppWinStyle" />
+			<field static="true" visibility="public" name="vbMinimizedNoFocus" fulltype="VBA.VBAppWinStyle" type="VBAppWinStyle" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="VBAppWinStyle" />
+			<constructor visibility="public" name="VBAppWinStyle">
+				<params>
+					<param name="iVBAppWinStyle" fulltype="int" type="int" />
+				</params>
+			</constructor>
+		</methods>
+	</class>
+
+	<class superclass="AbstractAction" visibility="public" package="VBA" serializable="true" superclassfulltype="javax.swing.AbstractAction" fulltype="VBA.TabAction" type="TabAction">
+		<methods>
+			<constructor visibility="public" name="TabAction">
+				<params>
+					<param name="forward" fulltype="boolean" type="boolean" />
+				</params>
+			</constructor>
+			<method visibility="public" name="actionPerformed" fulltype="void" type="void">
+				<params>
+					<param name="e" fulltype="java.awt.event.ActionEvent" type="ActionEvent" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.Strings" type="Strings">
+		<comment>
+			<description>Prozeduren, die zum Durchführen von Zeichenfolgenoperationen verwendet werden</description>
+			<attribute name="@author">
+				<description>Manuel Siekmann</description>
+			</attribute>
+			<attribute name="@version">
+				<description>1.0</description>
+			</attribute>
+		</comment>
+		<methods>
+			<constructor visibility="public" name="Strings" />
+			<method static="true" visibility="public" name="AscB" fulltype="int" type="int">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="AscW" fulltype="int" type="int">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Asc" fulltype="int" type="int">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ChrB" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Char" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ChrW" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Char" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Chr" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Char" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="InStr" fulltype="int" type="int">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="InStr" fulltype="int" type="int">
+				<params>
+					<param name="Start" fulltype="int" type="int" />
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="InStr" fulltype="int" type="int">
+				<params>
+					<param name="Start" fulltype="int" type="int" />
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+					<param name="CompareMet" fulltype="VBA.VBCompareMethod" type="VBCompareMethod" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="InStrRev" fulltype="int" type="int">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="InStrRev" fulltype="int" type="int">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+					<param name="Start" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="InStrRev" fulltype="int" type="int">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+					<param name="Start" fulltype="int" type="int" />
+					<param name="CompareMet" fulltype="VBA.VBCompareMethod" type="VBCompareMethod" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Len" fulltype="int" type="int">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Mid" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="Start" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Mid" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="Start" fulltype="int" type="int" />
+					<param name="Length" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Right" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="Length" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Left" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="Length" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="StrMerge" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="StrCat" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Replace" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Source" fulltype="java.lang.String" type="String" />
+					<param name="Pattern" fulltype="java.lang.String" type="String" />
+					<param name="Replace" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="LCase" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="UCase" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Trim" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="LTrim" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="RTrim" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="String" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Numbers" fulltype="int" type="int" />
+					<param name="TCharacter" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Space" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Numbers" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="StrCompPattern" fulltype="boolean" type="boolean">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="StrCompText" fulltype="int" type="int">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="StrComp" fulltype="int" type="int">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="StrComp" fulltype="int" type="int">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="String2" fulltype="java.lang.String" type="String" />
+					<param name="CompareMet" fulltype="VBA.VBCompareMethod" type="VBCompareMethod" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ArrayToString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="strArray" fulltype="byte[]" type="byte" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="StringToArray" fulltype="byte[]" type="byte">
+				<params>
+					<param name="strVal" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="StrReverse" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="PCase" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="StrConv" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="ConvMet" fulltype="VBA.VBStrConv" type="VBStrConv" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Split" fulltype="VBA.VBArrayString" type="VBArrayString">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="Split" fulltype="VBA.VBArrayString" type="VBArrayString">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="Delimiter" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="Split" fulltype="VBA.VBArrayString" type="VBArrayString">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="Delimiter" fulltype="java.lang.String" type="String" />
+					<param name="Limit" fulltype="long" type="long" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="Split" fulltype="VBA.VBArrayString" type="VBArrayString">
+				<params>
+					<param name="String1" fulltype="java.lang.String" type="String" />
+					<param name="Delimiter" fulltype="java.lang.String" type="String" />
+					<param name="Limit" fulltype="long" type="long" />
+					<param name="CompareMet" fulltype="VBA.VBCompareMethod" type="VBCompareMethod" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="WeekdayName" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Weekday" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="WeekdayName" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Weekday" fulltype="int" type="int" />
+					<param name="Abbreviate" fulltype="boolean" type="boolean" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="WeekdayName" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Weekday" fulltype="int" type="int" />
+					<param name="Abbreviate" fulltype="boolean" type="boolean" />
+					<param name="FirstDayOfWeek" fulltype="VBA.VBDayOfWeek" type="VBDayOfWeek" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="MonthName" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Month" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="MonthName" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Month" fulltype="int" type="int" />
+					<param name="Abbreviate" fulltype="boolean" type="boolean" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Join" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="val" fulltype="VBA.VBArrayString" type="VBArrayString" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="Join" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="val" fulltype="VBA.VBArrayString" type="VBArrayString" />
+					<param name="Delimiter" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="Filter" fulltype="VBA.VBArrayString" type="VBArrayString">
+				<params>
+					<param name="val" fulltype="VBA.VBArrayString" type="VBArrayString" />
+					<param name="Match" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="Filter" fulltype="VBA.VBArrayString" type="VBArrayString">
+				<params>
+					<param name="val" fulltype="VBA.VBArrayString" type="VBArrayString" />
+					<param name="Match" fulltype="java.lang.String" type="String" />
+					<param name="Include" fulltype="boolean" type="boolean" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="Filter" fulltype="VBA.VBArrayString" type="VBArrayString">
+				<params>
+					<param name="val" fulltype="VBA.VBArrayString" type="VBArrayString" />
+					<param name="Match" fulltype="java.lang.String" type="String" />
+					<param name="Include" fulltype="boolean" type="boolean" />
+					<param name="CompareMet" fulltype="VBA.VBCompareMethod" type="VBCompareMethod" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="Format" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Expression" fulltype="java.lang.String" type="String" />
+					<param name="Format" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="BasicLabelUI" visibility="public" package="VBA" superclassfulltype="javax.swing.plaf.basic.BasicLabelUI" fulltype="VBA.MultiLineLabelUI" type="MultiLineLabelUI">
+		<methods>
+			<constructor visibility="public" name="MultiLineLabelUI" />
+			<method static="true" visibility="public" name="layoutCompoundLabel" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Compute and return the location of the icons origin, the
+ location of origin of the text baseline, and a possibly clipped
+ version of the compound labels string.  Locations are computed
+ relative to the viewR rectangle.
+ The JComponents orientation (LEADING/TRAILING) will also be taken
+ into account and translated into LEFT/RIGHT values accordingly.</description>
+				</comment>
+				<params>
+					<param name="c" fulltype="javax.swing.JComponent" type="JComponent" />
+					<param name="fm" fulltype="java.awt.FontMetrics" type="FontMetrics" />
+					<param name="text" fulltype="java.lang.String[]" type="String" />
+					<param name="icon" fulltype="javax.swing.Icon" type="Icon" />
+					<param name="verticalAlignment" fulltype="int" type="int" />
+					<param name="horizontalAlignment" fulltype="int" type="int" />
+					<param name="verticalTextPosition" fulltype="int" type="int" />
+					<param name="horizontalTextPosition" fulltype="int" type="int" />
+					<param name="viewR" fulltype="java.awt.Rectangle" type="Rectangle" />
+					<param name="iconR" fulltype="java.awt.Rectangle" type="Rectangle" />
+					<param name="textR" fulltype="java.awt.Rectangle" type="Rectangle" />
+					<param name="textIconGap" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="layoutCompoundLabel" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Compute and return the location of the icons origin, the
+ location of origin of the text baseline, and a possibly clipped
+ version of the compound labels string.  Locations are computed
+ relative to the viewR rectangle.
+ This layoutCompoundLabel() does not know how to handle LEADING/TRAILING
+ values in horizontalTextPosition (they will default to RIGHT) and in
+ horizontalAlignment (they will default to CENTER).
+ Use the other version of layoutCompoundLabel() instead.</description>
+				</comment>
+				<params>
+					<param name="fm" fulltype="java.awt.FontMetrics" type="FontMetrics" />
+					<param name="text" fulltype="java.lang.String[]" type="String" />
+					<param name="icon" fulltype="javax.swing.Icon" type="Icon" />
+					<param name="verticalAlignment" fulltype="int" type="int" />
+					<param name="horizontalAlignment" fulltype="int" type="int" />
+					<param name="verticalTextPosition" fulltype="int" type="int" />
+					<param name="horizontalTextPosition" fulltype="int" type="int" />
+					<param name="viewR" fulltype="java.awt.Rectangle" type="Rectangle" />
+					<param name="iconR" fulltype="java.awt.Rectangle" type="Rectangle" />
+					<param name="textR" fulltype="java.awt.Rectangle" type="Rectangle" />
+					<param name="textIconGap" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="computeMultiLineDimension" fulltype="java.awt.Dimension" type="Dimension">
+				<params>
+					<param name="fm" fulltype="java.awt.FontMetrics" type="FontMetrics" />
+					<param name="strs" fulltype="java.lang.String[]" type="String" />
+				</params>
+			</method>
+			<method visibility="public" name="splitStringByLines" fulltype="java.lang.String[]" type="String">
+				<params>
+					<param name="str" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.Math" type="Math">
+		<comment>
+			<attribute name="@author">
+				<description>Manuel Siekmann</description>
+			</attribute>
+			<attribute name="@version">
+				<description>1.0 @since 2009-09-05</description>
+			</attribute>
+		</comment>
+		<methods>
+			<constructor visibility="public" name="Math" />
+			<method static="true" visibility="public" name="Sin" fulltype="double" type="double">
+				<comment>
+					<description>Returns the sine of an angle.</description>
+					<attribute name="@param">
+						<description>Number can be any valid numeric expression that expresses an angle in radians.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" comment="can be any valid numeric expression that expresses an angle in radians." fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Cos" fulltype="double" type="double">
+				<comment>
+					<description>Returns the cosine of an angle.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Number can be any valid numeric expression that expresses an angle in radians.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" comment="can be any valid numeric expression that expresses an angle in radians." fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Tan" fulltype="double" type="double">
+				<comment>
+					<description>Returns the tangent of an angle.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression that expresses an angle in radians.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Csc" fulltype="double" type="double">
+				<comment>
+					<description>Returns the cosecans of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Sec" fulltype="double" type="double">
+				<comment>
+					<description>Returns the secant of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Cot" fulltype="double" type="double">
+				<comment>
+					<description>Returns the cotangent of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Asin" fulltype="double" type="double">
+				<comment>
+					<description>Returns the arc sine of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Acos" fulltype="double" type="double">
+				<comment>
+					<description>Returns the arc cosine of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Atn" fulltype="double" type="double">
+				<comment>
+					<description>Returns the arc tangent of a number.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Atan2" fulltype="double" type="double">
+				<comment>
+					<description>Returns the arc tangent of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number arguments can be any valid numeric expressions.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="y" fulltype="double" type="double" />
+					<param name="x" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Acsc" fulltype="double" type="double">
+				<comment>
+					<description>Returns the arc cosecant of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="y" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Asec" fulltype="double" type="double">
+				<comment>
+					<description>Returns the arc secant of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number arguments can be any valid numeric expressions.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="x" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Acot" fulltype="double" type="double">
+				<comment>
+					<description>Returns the arc cotangent of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number arguments can be any valid numeric expressions.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="t" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Sinh" fulltype="double" type="double">
+				<comment>
+					<description>Returns the hyperbolic sine of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number arguments can be any valid numeric expressions.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Cosh" fulltype="double" type="double">
+				<comment>
+					<description>Returns the hyperbolic cosine of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number arguments can be any valid numeric expressions.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Tanh" fulltype="double" type="double">
+				<comment>
+					<description>Returns the hyperbolic tangent of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number arguments can be any valid numeric expressions.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Csch" fulltype="double" type="double">
+				<comment>
+					<description>Returns the hyperbolic cosecant of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Sech" fulltype="double" type="double">
+				<comment>
+					<description>Returns the hyperbolic secant of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Coth" fulltype="double" type="double">
+				<comment>
+					<description>Returns the hyperbolic cotangent of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Asinh" fulltype="double" type="double">
+				<comment>
+					<description>Returns the area hyperbolic sine of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Acosh" fulltype="double" type="double">
+				<comment>
+					<description>Returns the area hyperbolic cosine of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Atanh" fulltype="double" type="double">
+				<comment>
+					<description>Returns the area hyperbolic tangent of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Acsch" fulltype="double" type="double">
+				<comment>
+					<description>Returns the area hyperbolic cosecant of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Asech" fulltype="double" type="double">
+				<comment>
+					<description>Returns the area hyperbolic secant of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Acoth" fulltype="double" type="double">
+				<comment>
+					<description>Returns the area hyperbolic cotangent of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="SinC" fulltype="double" type="double">
+				<comment>
+					<description>Returns the sine cardinale of a number.</description>
+					<attribute name="@author">
+						<description>OlimilO</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+					<attribute name="@since">
+						<description>2009-09-05</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Abs" fulltype="double" type="double">
+				<comment>
+					<description>Returns the absolute value of a number.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Exp" fulltype="double" type="double">
+				<comment>
+					<description>Returns e (the base of natural logarithms) raised to a power.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Log" fulltype="double" type="double">
+				<comment>
+					<description>Returns the natural logarithm of a number.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Randomize" fulltype="void" type="void" />
+			<method static="true" visibility="public" name="Randomize" fulltype="void" type="void">
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Rnd" fulltype="double" type="double">
+				<comment>
+					<description>Returns a random double value with a positive sign, greater than or equal to 0.0 and less than 1.0.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+				</comment>
+			</method>
+			<method static="true" visibility="public" name="Rnd" fulltype="double" type="double">
+				<comment>
+					<description>Returns a random double value with a positive sign, greater than or equal to 0.0 and less than 1.0.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>unused</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Round" fulltype="double" type="double">
+				<comment>
+					<description>Returns a number rounded to a specified number of decimal places.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Numeric expression being rounded.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Round" fulltype="double" type="double">
+				<comment>
+					<description>Returns a number rounded to a specified number of decimal places.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Numeric expression being rounded.</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Number indicating how many places to the right of the decimal are included in the rounding. If omitted, integers are returned by the Round function.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" comment="indicating how many places to the right of the decimal are included in the rounding. If omitted, integers are returned by the Round function." fulltype="double" type="double" />
+					<param name="NumDigitsAfterDecimal" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Sgn" returncomment="The Sgn function has the following return values:
+        &lt;div class=&quot;tableSection&quot;&gt;
+        &lt;tr&gt;&lt;th&gt;If number is&lt;/th&gt;&lt;th&gt;Sgn returns&lt;/th&gt;&lt;/tr&gt;	
+        &lt;tr&gt;&lt;td&gt;Greater than zero&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Equal to zero&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Less than zero&lt;/td&gt;&lt;td&gt;-1&lt;/td&gt;&lt;/tr&gt;
+        &lt;/table&gt;" fulltype="double" type="double">
+				<comment>
+					<description>Returns an integer indicating the sign of a number.</description>
+					<attribute name="@return">
+						<description>The Sgn function has the following return values:
+        &lt;div class=&quot;tableSection&quot;&gt;
+        &lt;tr&gt;&lt;th&gt;If number is&lt;/th&gt;&lt;th&gt;Sgn returns&lt;/th&gt;&lt;/tr&gt;	
+        &lt;tr&gt;&lt;td&gt;Greater than zero&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Equal to zero&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Less than zero&lt;/td&gt;&lt;td&gt;-1&lt;/td&gt;&lt;/tr&gt;
+        &lt;/table&gt;</description>
+					</attribute>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Sqr" fulltype="double" type="double">
+				<comment>
+					<description>Returns the square root of a number.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>The number argument can be any valid numeric expression greater than or equal to 0.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Number" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ShL" fulltype="int" type="int">
+				<comment>
+					<description>shifts the bits of value shift-bits to the left.</description>
+					<attribute name="@param">
+						<description>value: the value to be shifted.</description>
+					</attribute>
+					<attribute name="@param">
+						<description>shift: the amount of bits to shift the bits of value</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="value" fulltype="int" type="int" />
+					<param name="shift" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ShL" fulltype="long" type="long">
+				<params>
+					<param name="value" fulltype="long" type="long" />
+					<param name="shift" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ShR" fulltype="int" type="int">
+				<comment>
+					<description>shifts the bits of value shift-bits to the right and keeps the MSB.</description>
+					<attribute name="@param">
+						<description>value: the value to be shifted.</description>
+					</attribute>
+					<attribute name="@param">
+						<description>shift: the amount of bits to shift the bits of value</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="value" fulltype="int" type="int" />
+					<param name="shift" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ShR" fulltype="long" type="long">
+				<params>
+					<param name="value" fulltype="long" type="long" />
+					<param name="shift" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ShRZ" fulltype="int" type="int">
+				<comment>
+					<description>shifts the bits of value shift-bits to the right and shifts also the MSB.</description>
+					<attribute name="@param">
+						<description>value: the value to be shifted.</description>
+					</attribute>
+					<attribute name="@param">
+						<description>shift: the amount of bits to shift the bits of value</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="value" fulltype="int" type="int" />
+					<param name="shift" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ShRZ" fulltype="long" type="long">
+				<params>
+					<param name="value" fulltype="long" type="long" />
+					<param name="shift" fulltype="int" type="int" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="EventQueue" visibility="public" package="VBA" superclassfulltype="java.awt.EventQueue" fulltype="VBA.JabacoEventQueue" type="JabacoEventQueue">
+		<methods>
+			<constructor visibility="public" name="JabacoEventQueue" />
+			<method static="true" visibility="public" name="getJabacoEventQueue" fulltype="VBA.JabacoEventQueue" type="JabacoEventQueue" />
+			<method visibility="public" name="dispatchEvent" fulltype="void" type="void">
+				<params>
+					<param name="evt" fulltype="java.awt.AWTEvent" type="AWTEvent" />
+				</params>
+			</method>
+			<method visibility="public" name="dispatchEvents" fulltype="void" type="void">
+				<exceptions>
+					<exception fulltype="java.lang.InterruptedException" type="InterruptedException" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="flushPendingEvents" fulltype="void" type="void" />
+			<method visibility="public" name="getNonBlockingNextEvent" fulltype="java.awt.AWTEvent" type="AWTEvent">
+				<exceptions>
+					<exception fulltype="java.lang.InterruptedException" type="InterruptedException" />
+				</exceptions>
+			</method>
+		</methods>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.IVBArray" type="IVBArray">
+		<methods>
+			<method visibility="public" name="byteArray" fulltype="byte[]" type="byte">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="boolArray" fulltype="boolean[]" type="boolean">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="intArray" fulltype="int[]" type="int">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="doubleArray" fulltype="double[]" type="double">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="longArray" fulltype="long[]" type="long">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="floatArray" fulltype="float[]" type="float">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="stringArray" fulltype="java.lang.String[]" type="String">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="objectArray" fulltype="java.lang.Object[]" type="Object">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getLBound" fulltype="int" type="int">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getLBound" fulltype="int" type="int">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getUBound" fulltype="int" type="int">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getUBound" fulltype="int" type="int">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getBase" fulltype="int" type="int" />
+			<method visibility="public" name="setBound" fulltype="void" type="void">
+				<params>
+					<param name="iNewLBound" fulltype="int" type="int" />
+					<param name="iNewUBound" fulltype="int" type="int" />
+					<param name="bPreserve" fulltype="boolean" type="boolean" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="getFromDimension" fulltype="VBA.VBArray" type="VBArray">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="addDimension" fulltype="void" type="void">
+				<params>
+					<param name="iNewLBound" fulltype="int" type="int" />
+					<param name="iNewUBound" fulltype="int" type="int" />
+					<param name="bPreserve" fulltype="boolean" type="boolean" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="clone" fulltype="java.lang.Object" type="Object" />
+			<method visibility="public" name="cloneArray" fulltype="VBA.VBArray" type="VBArray">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOf" fulltype="java.lang.Object" type="Object">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueNative" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="java.lang.Object" type="Object" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValue" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="java.lang.Object" type="Object" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfDbl" fulltype="double" type="double">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueDbl" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="double" type="double" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfInt" fulltype="int" type="int">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueInt" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfLng" fulltype="long" type="long">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueLng" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="long" type="long" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfObj" fulltype="java.lang.Object" type="Object">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueObj" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="java.lang.Object" type="Object" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueVar" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfVar" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="addStringItem" fulltype="void" type="void">
+				<params>
+					<param name="NewItem" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="setValueStr" fulltype="void" type="void">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+					<param name="Value" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="valueOfStr" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Index" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="toDebugString" fulltype="java.lang.String" type="String">
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+		</methods>
+	</class>
+
+	<class abstract="true" visibility="public" package="VBA" interface="true" fulltype="VBA.IResource" type="IResource">
+		<methods>
+			<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.Interaction" type="Interaction">
+		<fields>
+			<field static="true" visibility="public" name="RessourceClassOwner" fulltype="java.lang.Object" type="Object" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="Interaction" />
+			<method static="true" visibility="public" name="getMethod" fulltype="java.lang.reflect.Method" type="Method">
+				<params>
+					<param name="obj" fulltype="java.lang.Object" type="Object" />
+					<param name="ProcName" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="getMethod" fulltype="java.lang.reflect.Method" type="Method">
+				<params>
+					<param name="obj" fulltype="java.lang.Object" type="Object" />
+					<param name="ProcName" fulltype="java.lang.String" type="String" />
+					<param name="CallType" fulltype="VBA.VBCallType" type="VBCallType" />
+					<param name="Args" fulltype="VBA.VBArrayVariant" type="VBArrayVariant" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="hasAlpha" fulltype="boolean" type="boolean">
+				<params>
+					<param name="image" fulltype="java.awt.Image" type="Image" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="createBufferedImage" fulltype="java.awt.image.BufferedImage" type="BufferedImage">
+				<params>
+					<param name="image" fulltype="java.awt.Image" type="Image" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getResourceAsString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="relativeFilename" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getResourceAsString" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="relativeClass" fulltype="java.lang.Class" type="Class" />
+					<param name="relativeFilename" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getResourceAsImage" fulltype="java.awt.Image" type="Image">
+				<params>
+					<param name="relativeFilename" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getResourceAsImage" fulltype="java.awt.Image" type="Image">
+				<params>
+					<param name="relativeClass" fulltype="java.lang.Class" type="Class" />
+					<param name="relativeFilename" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getResourceAsStream" fulltype="java.io.InputStream" type="InputStream">
+				<params>
+					<param name="relativeClass" fulltype="java.lang.Class" type="Class" />
+					<param name="relativeFilename" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getResourceAsByteArray" fulltype="java.io.ByteArrayOutputStream" type="ByteArrayOutputStream">
+				<params>
+					<param name="relativeClass" fulltype="java.lang.Class" type="Class" />
+					<param name="relativeFilename" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="IIF" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="Expression" fulltype="boolean" type="boolean" />
+					<param name="TruePart" fulltype="VBA.VBVariant" type="VBVariant" />
+					<param name="FalsePart" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CallByName" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="obj" fulltype="java.lang.Object" type="Object" />
+					<param name="ProcName" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="CallByName" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="obj" fulltype="java.lang.Object" type="Object" />
+					<param name="ProcName" fulltype="java.lang.String" type="String" />
+					<param name="Arg" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="CallByName" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="obj" fulltype="java.lang.Object" type="Object" />
+					<param name="ProcName" fulltype="java.lang.String" type="String" />
+					<param name="Args" fulltype="VBA.VBArrayVariant" type="VBArrayVariant" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="CallByName" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="obj" fulltype="java.lang.Object" type="Object" />
+					<param name="ProcName" fulltype="java.lang.String" type="String" />
+					<param name="CallType" fulltype="VBA.VBCallType" type="VBCallType" />
+					<param name="Args" fulltype="VBA.VBArrayVariant" type="VBArrayVariant" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="NativeCall" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="ModuleName" fulltype="java.lang.String" type="String" />
+					<param name="ProcName" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="NativeCall" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="ModuleName" fulltype="java.lang.String" type="String" />
+					<param name="ProcName" fulltype="java.lang.String" type="String" />
+					<param name="Args" fulltype="VBA.VBArrayVariant" type="VBArrayVariant" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="InputBox" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Prompt" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="InputBox" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Prompt" fulltype="java.lang.String" type="String" />
+					<param name="Title" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="InputBox" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Prompt" fulltype="java.lang.String" type="String" />
+					<param name="Title" fulltype="java.lang.String" type="String" />
+					<param name="Default" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="MsgBox" fulltype="VBA.VBMsgBoxResult" type="VBMsgBoxResult">
+				<params>
+					<param name="Prompt" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="MsgBox" fulltype="VBA.VBMsgBoxResult" type="VBMsgBoxResult">
+				<params>
+					<param name="Prompt" fulltype="java.lang.String" type="String" />
+					<param name="Buttons" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="MsgBox" fulltype="VBA.VBMsgBoxResult" type="VBMsgBoxResult">
+				<params>
+					<param name="Prompt" fulltype="java.lang.String" type="String" />
+					<param name="Buttons" fulltype="VBA.VBMsgBoxStyle" type="VBMsgBoxStyle" />
+					<param name="Title" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method visibility="public" name="Beep" fulltype="void" type="void" />
+			<method static="true" visibility="public" name="getJabacoFocusedWindow" fulltype="java.awt.Component" type="Component" />
+			<method static="true" visibility="public" name="getJabacoFocusedFrame" fulltype="java.awt.Frame" type="Frame" />
+			<method static="true" visibility="public" name="MsgBox" fulltype="void" type="void">
+				<params>
+					<param name="ex" fulltype="java.lang.Throwable" type="Throwable" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Shell" fulltype="java.lang.Process" type="Process">
+				<params>
+					<param name="PathName" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="Shell" fulltype="java.lang.Process" type="Process">
+				<params>
+					<param name="PathName" fulltype="java.lang.String" type="String" />
+					<param name="WindowStyle" fulltype="VBA.VBAppWinStyle" type="VBAppWinStyle" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="SendKeys" fulltype="void" type="void">
+				<comment>
+					<description>sends keystrokes to the current active window</description>
+				</comment>
+				<params>
+					<param name="sKey" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="SendKeys" fulltype="void" type="void">
+				<params>
+					<param name="sKey" fulltype="java.lang.String" type="String" />
+					<param name="wait" fulltype="boolean" type="boolean" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="SendKeys" fulltype="void" type="void">
+				<params>
+					<param name="sKey" fulltype="java.lang.String" type="String" />
+					<param name="wait" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="SendKeys" fulltype="java.awt.Robot" type="Robot">
+				<params>
+					<param name="iKey" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="SendKeys" fulltype="java.awt.Robot" type="Robot">
+				<params>
+					<param name="iKey" fulltype="int" type="int" />
+					<param name="wait" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="AppActivate" fulltype="void" type="void">
+				<comment>
+					<description>simulates AppActivate simply by sending [Alt]+[Tab]</description>
+				</comment>
+				<params>
+					<param name="Title_PID_ignored" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="AppActivate" fulltype="void" type="void">
+				<params>
+					<param name="Title_PID_ignored" fulltype="VBA.VBVariant" type="VBVariant" />
+					<param name="wait" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Exception" type="Exception" />
+				</exceptions>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.Information" type="Information">
+		<methods>
+			<constructor visibility="public" name="Information" />
+			<method static="true" visibility="public" name="EErr" fulltype="VBA.ErrObject" type="ErrObject" />
+			<method static="true" visibility="public" name="RGBtoColor" fulltype="java.awt.Color" type="Color">
+				<params>
+					<param name="lRGB" fulltype="long" type="long" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ColorToRGB" fulltype="long" type="long">
+				<params>
+					<param name="cColor" fulltype="java.awt.Color" type="Color" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="BGRtoRGB" fulltype="long" type="long">
+				<params>
+					<param name="lBGR" fulltype="long" type="long" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="RGBtoBGR" fulltype="long" type="long">
+				<params>
+					<param name="lRGB" fulltype="long" type="long" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="RGB" fulltype="long" type="long">
+				<params>
+					<param name="R" fulltype="int" type="int" />
+					<param name="G" fulltype="int" type="int" />
+					<param name="B" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="RGB" fulltype="long" type="long">
+				<params>
+					<param name="R" fulltype="int" type="int" />
+					<param name="G" fulltype="int" type="int" />
+					<param name="B" fulltype="int" type="int" />
+					<param name="A" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="NotRGB" fulltype="long" type="long">
+				<params>
+					<param name="lRGB" fulltype="long" type="long" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="NegativeColor" fulltype="java.awt.Color" type="Color">
+				<params>
+					<param name="col" fulltype="java.awt.Color" type="Color" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="QBColor" fulltype="long" type="long">
+				<params>
+					<param name="iColor" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="IsFloatingPoint" fulltype="boolean" type="boolean">
+				<params>
+					<param name="val" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="IsNumeric" fulltype="boolean" type="boolean">
+				<params>
+					<param name="val" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="IsNull" fulltype="boolean" type="boolean">
+				<params>
+					<param name="val" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="IsNothing" fulltype="boolean" type="boolean">
+				<params>
+					<param name="val" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="IsArray" fulltype="boolean" type="boolean">
+				<params>
+					<param name="val" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="IsEnum" fulltype="boolean" type="boolean">
+				<params>
+					<param name="val" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="TypeName" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="val" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="VarType" fulltype="VBA.VBVarType" type="VBVarType">
+				<params>
+					<param name="VarName" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.Financial" type="Financial">
+		<methods>
+			<constructor visibility="public" name="Financial" />
+			<method static="true" visibility="public" name="DDB" fulltype="double" type="double">
+				<params>
+					<param name="Cost" fulltype="double" type="double" />
+					<param name="Salvage" fulltype="double" type="double" />
+					<param name="Life" fulltype="double" type="double" />
+					<param name="Period" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="DDB" fulltype="double" type="double">
+				<params>
+					<param name="Cost" fulltype="double" type="double" />
+					<param name="Salvage" fulltype="double" type="double" />
+					<param name="Life" fulltype="double" type="double" />
+					<param name="Period" fulltype="double" type="double" />
+					<param name="Factor" fulltype="double" type="double" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="JDialog" visibility="public" package="VBA" serializable="true" superclassfulltype="javax.swing.JDialog" fulltype="VBA.ExceptionDialog" type="ExceptionDialog">
+		<implements>
+			<interface fulltype="java.awt.event.ActionListener" type="ActionListener" />
+		</implements>
+		<fields>
+			<field visibility="public" name="content" fulltype="javax.swing.JPanel" type="JPanel" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="ExceptionDialog">
+				<params>
+					<param name="owner" fulltype="java.awt.Frame" type="Frame" />
+					<param name="message" fulltype="java.lang.String" type="String" />
+					<param name="stackTrace" fulltype="java.lang.String" type="String" />
+					<param name="title" fulltype="java.lang.String" type="String" />
+					<param name="modal" fulltype="boolean" type="boolean" />
+				</params>
+			</constructor>
+			<method visibility="public" name="actionPerformed" fulltype="void" type="void">
+				<params>
+					<param name="e" fulltype="java.awt.event.ActionEvent" type="ActionEvent" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.ErrObject" type="ErrObject">
+		<comment>
+			<attribute name="@author">
+				<description>OlimilO</description>
+			</attribute>
+			<attribute name="@since">
+				<description>2009_10_06</description>
+			</attribute>
+		</comment>
+		<methods>
+			<method static="true" visibility="public" name="Clear" fulltype="void" type="void" />
+			<method static="true" visibility="public" name="$Description" fulltype="void" type="void">
+				<params>
+					<param name="newDescription" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="$Description" fulltype="java.lang.String" type="String" />
+			<method static="true" visibility="public" name="$HelpContext" fulltype="void" type="void">
+				<params>
+					<param name="newHelpContext" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="$HelpContext" fulltype="java.lang.String" type="String" />
+			<method static="true" visibility="public" name="$HelpFile" fulltype="void" type="void">
+				<params>
+					<param name="newHelpFile" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="$HelpFile" fulltype="java.lang.String" type="String" />
+			<method static="true" visibility="public" name="LastDllError" fulltype="long" type="long" />
+			<method static="true" visibility="public" name="$Number" fulltype="void" type="void">
+				<params>
+					<param name="newNumber" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="$Number" fulltype="int" type="int" />
+			<method static="true" visibility="public" name="$Source" fulltype="void" type="void">
+				<params>
+					<param name="newSource" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="$Source" fulltype="java.lang.String" type="String" />
+			<method static="true" visibility="public" name="Raise" fulltype="void" type="void">
+				<params>
+					<param name="e" fulltype="java.lang.Throwable" type="Throwable" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Throwable" type="Throwable" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="Raise" fulltype="void" type="void">
+				<params>
+					<param name="number" fulltype="int" type="int" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Throwable" type="Throwable" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="Raise" fulltype="void" type="void">
+				<params>
+					<param name="number" fulltype="int" type="int" />
+					<param name="Source" fulltype="java.lang.String" type="String" />
+					<param name="Description" fulltype="java.lang.String" type="String" />
+					<param name="HelpFile" fulltype="java.lang.String" type="String" />
+					<param name="HelpContext" fulltype="java.lang.String" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.lang.Throwable" type="Throwable" />
+				</exceptions>
+			</method>
+			<method static="true" visibility="public" name="getInstance" fulltype="VBA.ErrObject" type="ErrObject" />
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.DateTime" type="DateTime">
+		<methods>
+			<constructor visibility="public" name="DateTime" />
+			<method static="true" visibility="public" name="Year" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="DateValue" fulltype="java.util.Date" type="Date" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Month" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="DateValue" fulltype="java.util.Date" type="Date" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Day" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="DateValue" fulltype="java.util.Date" type="Date" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Hour" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="DateValue" fulltype="java.util.Date" type="Date" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Minute" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="DateValue" fulltype="java.util.Date" type="Date" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Second" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="DateValue" fulltype="java.util.Date" type="Date" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Weekday" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="DateValue" fulltype="java.util.Date" type="Date" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Timer" fulltype="long" type="long" />
+			<method static="true" visibility="public" name="Now" fulltype="VBA.VBVariant" type="VBVariant" />
+			<method static="true" visibility="public" name="DateSerial" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="year" fulltype="int" type="int" />
+					<param name="month" fulltype="int" type="int" />
+					<param name="day" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="DateDiff" fulltype="long" type="long">
+				<params>
+					<param name="Interval" fulltype="java.lang.String" type="String" />
+					<param name="Date1" fulltype="VBA.VBVariant" type="VBVariant" />
+					<param name="Date2" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.Cursors" type="Cursors">
+		<fields>
+			<field final="true" static="true" const="0" visibility="public" name="VBA_DEFAULT" constexpr="0" fulltype="int" type="int" />
+			<field final="true" static="true" const="1" visibility="public" name="VBA_ARROW" constexpr="1" fulltype="int" type="int" />
+			<field final="true" static="true" const="2" visibility="public" name="VBA_CROSSHAIR" constexpr="2" fulltype="int" type="int" />
+			<field final="true" static="true" const="3" visibility="public" name="VBA_IBEAM" constexpr="3" fulltype="int" type="int" />
+			<field final="true" static="true" const="4" visibility="public" name="VBA_ICON_POINTER" constexpr="4" fulltype="int" type="int" />
+			<field final="true" static="true" const="5" visibility="public" name="VBA_SIZE_POINTER" constexpr="5" fulltype="int" type="int" />
+			<field final="true" static="true" const="6" visibility="public" name="VBA_SIZE_NESW" constexpr="6" fulltype="int" type="int" />
+			<field final="true" static="true" const="7" visibility="public" name="VBA_SIZE_NS" constexpr="7" fulltype="int" type="int" />
+			<field final="true" static="true" const="8" visibility="public" name="VBA_SIZE_NWSE" constexpr="8" fulltype="int" type="int" />
+			<field final="true" static="true" const="9" visibility="public" name="VBA_SIZE_WE" constexpr="9" fulltype="int" type="int" />
+			<field final="true" static="true" const="10" visibility="public" name="VBA_UP_ARROW" constexpr="10" fulltype="int" type="int" />
+			<field final="true" static="true" const="11" visibility="public" name="VBA_HOURGLASS" constexpr="11" fulltype="int" type="int" />
+			<field final="true" static="true" const="12" visibility="public" name="VBA_NO_DROP" constexpr="12" fulltype="int" type="int" />
+			<field final="true" static="true" const="13" visibility="public" name="VBA_ARROW_HOURGLASS" constexpr="13" fulltype="int" type="int" />
+			<field final="true" static="true" const="14" visibility="public" name="VBA_ARROW_QUESTION" constexpr="14" fulltype="int" type="int" />
+			<field final="true" static="true" const="15" visibility="public" name="VBA_SIZE_ALL" constexpr="15" fulltype="int" type="int" />
+			<field final="true" static="true" const="16" visibility="public" name="VBA_HAND_CURSOR" constexpr="16" fulltype="int" type="int" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="Cursors" />
+			<method visibility="public" name="getVBACursor" fulltype="java.awt.Cursor" type="Cursor">
+				<params>
+					<param name="number" fulltype="int" type="int" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.Cryptography" type="Cryptography">
+		<comment>
+			<description>Cryptography Methods</description>
+			<attribute name="@author">
+				<description>Manuel Siekmann</description>
+			</attribute>
+			<attribute name="@version">
+				<description>1.0</description>
+			</attribute>
+		</comment>
+		<methods>
+			<constructor visibility="public" name="Cryptography" />
+			<method static="true" visibility="public" name="md5" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="sha1" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="encodeBase64" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="decodeBase64" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="s" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.Conversion" type="Conversion">
+		<comment>
+			<description>The Conversion module contains the procedures used to perform various conversion operations. 
+ This module supports the Jabaco language keywords and run-time library members that convert
+ decimal numbers to other bases, numbers to strings, strings to numbers, and one data type to another.</description>
+			<attribute name="@author">
+				<description>Manuel Siekmann</description>
+			</attribute>
+			<attribute name="@version">
+				<description>1.0</description>
+			</attribute>
+		</comment>
+		<methods>
+			<constructor visibility="public" name="Conversion" />
+			<method static="true" visibility="public" name="CBool" fulltype="boolean" type="boolean">
+				<comment>
+					<description>Converts an expression into a Boolean.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Any valid Char or String or numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CByte" fulltype="byte" type="byte">
+				<comment>
+					<description>Converts an expression into a Byte.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>0 through 255 (unsigned); fractional parts are rounded.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CByte" fulltype="byte" type="byte">
+				<comment>
+					<description>Converts an expression into a Byte.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>0 through 255 (unsigned); fractional parts are rounded.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CChar" fulltype="char" type="char">
+				<comment>
+					<description>Converts an expression into a Char.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>0 through 65.535 (unsigned); fractional parts are rounded.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CChar" fulltype="char" type="char">
+				<comment>
+					<description>Converts an expression into a Char.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>0 through 65.535 (unsigned); fractional parts are rounded.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CCur" fulltype="long" type="long">
+				<comment>
+					<description>Same like CLng</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CLng" fulltype="long" type="long">
+				<comment>
+					<description>Converts an expression into a Long.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CLng" fulltype="long" type="long">
+				<comment>
+					<description>Converts an expression into a Long.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CInt" fulltype="int" type="int">
+				<comment>
+					<description>Converts an expression into an Integer.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CInt" fulltype="int" type="int">
+				<comment>
+					<description>Converts an expression into an Integer.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="byte" type="byte" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CInt" fulltype="int" type="int">
+				<comment>
+					<description>Converts an expression into an Integer.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Int" fulltype="int" type="int">
+				<comment>
+					<description>Same like CInt</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CDbl" fulltype="double" type="double">
+				<comment>
+					<description>Same like CDbl</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CDbl" fulltype="double" type="double">
+				<comment>
+					<description>Same like CDbl</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Val" fulltype="double" type="double">
+				<comment>
+					<description>Returns the numbers contained in a string as a numeric value of appropriate type.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Any valid numeric expression.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CStr" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Returns the numbers contained in a string as a numeric value of appropriate type.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Append all lines in a BufferedReader and return as String</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="java.io.InputStream" type="InputStream" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CStr" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Returns the numbers contained in a string as a numeric value of appropriate type.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Append all lines in a BufferedReader and return as String</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="java.io.BufferedReader" type="BufferedReader" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CStr" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Concatenate all lines in a BufferedReader and return as String</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Concatenate all lines in a BufferedReader and return as String</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="VBA.VBArrayByte" type="VBArrayByte" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CStr" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Concatenate all lines in a BufferedReader and return as String</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Concatenate all lines in a BufferedReader and return as String</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="VBA.VBArrayChar" type="VBArrayChar" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CStr" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Returns the numbers contained in a string as a numeric value of appropriate type.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Concatenate all lines in a BufferedReader and return as String</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CStr" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Returns the numbers contained in a string as a numeric value of appropriate type.</description>
+					<attribute name="@author">
+						<description>Manuel Siekmann</description>
+					</attribute>
+					<attribute name="@param">
+						<description>Concatenate all lines in a BufferedReader and return as String</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="Expression" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CStr" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Expression" fulltype="char" type="char" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CStr" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Expression" fulltype="char[]" type="char" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CStr" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Expression" fulltype="double" type="double" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CStr" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Expression" fulltype="java.util.Date" type="Date" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Str" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CVar" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="Expression" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CVar" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CVErr" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="Expression" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CDate" fulltype="java.util.Date" type="Date">
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CDate" fulltype="java.util.Date" type="Date">
+				<params>
+					<param name="Expression" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CDate" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="obj" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Hex" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Hex" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Expression" fulltype="long" type="long" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Hex" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Expression" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Hex" fulltype="java.lang.String" type="String">
+				<params>
+					<param name="Expression" fulltype="short" type="short" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Fix" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="Oct" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CSng" fulltype="float" type="float">
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CDec" fulltype="VBA.VBVariant" type="VBVariant">
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CVDate" fulltype="java.util.Date" type="Date">
+				<params>
+					<param name="Expression" fulltype="VBA.VBVariant" type="VBVariant" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CopyB" fulltype="int" type="int">
+				<params>
+					<param name="s" fulltype="short" type="short" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="CopyB" fulltype="long" type="long">
+				<params>
+					<param name="i" fulltype="int" type="int" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+	<class superclass="VBEnumClass" visibility="public" package="VBA" serializable="true" superclassfulltype="VBA.VBEnumClass" fulltype="VBA.Constants" type="Constants">
+		<fields>
+			<field final="true" static="true" visibility="public" name="vbBack" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Represents a backspace character for print and display functions.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" visibility="public" name="vbCr" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Represents a carriage-return character for print and display functions.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" visibility="public" name="vbCrLf" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Represents a carriage-return character combined with a linefeed character for print and display functions.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" visibility="public" name="vbFormFeed" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Represents a form-feed character for print functions.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" visibility="public" name="vbLf" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Represents a form-feed character for print functions.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" visibility="public" name="vbNewLine" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Represents a newline character for print and display functions.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" visibility="public" name="vbNullChar" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Represents a newline character for print and display functions.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" visibility="public" name="vbNullString" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Represents a zero-length string for print and display functions, and for calling external procedures.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" visibility="public" name="vbTab" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Represents a tab character for print and display functions.</description>
+				</comment>
+			</field>
+			<field final="true" static="true" visibility="public" name="vbVerticalTab" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Represents a carriage-return character for print functions.</description>
+				</comment>
+			</field>
+		</fields>
+		<methods>
+			<constructor visibility="public" name="Constants" />
+		</methods>
+	</class>
+
+	<class superclass="Object" visibility="public" package="VBA" superclassfulltype="java.lang.Object" fulltype="VBA.Ablas" type="Ablas">
+		<comment>
+			<attribute name="@author">
+				<description>Timothy Garrity</description>
+			</attribute>
+			<attribute name="@version">
+				<description>1.0 @since 2014-03-25</description>
+			</attribute>
+		</comment>
+		<methods>
+			<constructor visibility="public" name="Ablas" />
+			<method static="true" visibility="public" name="ABLASSplitLength" fulltype="void" type="void">
+				<params>
+					<param name="A" fulltype="double" type="double" />
+					<param name="N" fulltype="long" type="long" />
+					<param name="n1" fulltype="long" type="long" />
+					<param name="n2" fulltype="long" type="long" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ABLASComplexSplitLength" fulltype="void" type="void">
+				<params>
+					<param name="A" fulltype="java.lang.Long" type="Long" />
+					<param name="N" fulltype="java.lang.Long" type="Long" />
+					<param name="N1" fulltype="java.lang.Long" type="Long" />
+					<param name="N2" fulltype="java.lang.Long" type="Long" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="ABLASBlockSize" fulltype="long" type="long">
+				<params>
+					<param name="A" fulltype="double" type="double" />
+				</params>
+			</method>
+		</methods>
+	</class>
+
+</jabadoc>

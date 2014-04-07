@@ -1,0 +1,111 @@
+﻿<?xml version="1.0"?>
+ <project name="JabacoFramework" basedir="." default="build">
+
+	<property name="name" value="Jabaco" />
+	
+	<tstamp>
+		<format property="build.timestamp" pattern="yyyy-MM-dd HHmm"/>
+	</tstamp>
+
+	<tstamp>
+		<format property="build.timestamp.filename" pattern="yyyyMMddHHmm"/>
+	</tstamp>
+
+	<property name="svnant.dir" value = "D:\Inet_Download\Jabaco\Apache-Ant\apache-ant-1.7.1\lib" />
+	<property name="base.dir"   value = "C:\Users\tim\jabacoframework-read-only" />
+	<property name="winscp.dir" value = "C:\Program Files (x86)\WinSCP\WinSCP.exe" />
+	<property name="jabaco.dir" value = "C:\Program Files (x86)\Jabaco" />
+	
+	<property name="framework.dir" value = "${base.dir}/Framework" />
+	<property name="history.dir"   value = "${base.dir}/History" />
+	<property name="upload.dir"    value = "${base.dir}/Upload" />
+	<property name="lastbuild.dir" value = "${base.dir}/LastBuild" />
+	
+	<property name="bin.dir"     value = "./bin" />
+	<property name="build.dir"   value = "./bin-tmp" />
+	<property name="src.dir"     value="./src" />
+	<property name="src.project.path" value="${src.dir}/VB/Framework.jba" />
+	<property name="doclet.dir"  value="./doclet" />
+	<property name="doclet.path" value="${doclet.dir}/bin/JBCDoclet.jar" />
+	<property name="doc.dir"     value="./doc" />
+	<property name="extlib.dir"  value="./lib" />
+	<property name="manifest"    value="${src.dir}/manifest" />
+
+	<!-- create the framework -->
+	<target name="build" depends="clean">
+
+		<!-- create the working directory -->
+		<mkdir dir="${build.dir}" />
+		<!-- create the binary output directory -->
+		<mkdir dir="${bin.dir}" />
+		<!-- create the documentation output directory -->
+		<mkdir dir="${doc.dir}" />
+
+		<echo>${build.dir}</echo>
+			
+		<!--  compile the java sourcefiles -->
+		<javac srcdir="${src.dir}"
+					destdir="${build.dir}"
+					debug="true"
+					source="1.4"
+					target="1.4.2"
+					optimize="true">
+			<classpath>
+				<pathelement path="${java.class.path}/" />
+				<pathelement path="${extlib.dir}" />
+			</classpath>
+		</javac>
+
+		<!--  compile the jabaco sourcefiles -->
+		<echo>Compile the Jabaco sourcefiles to buildpath</echo>
+		<exec executable = "${jabaco.dir}/Jabaco.exe">
+			<arg value = "-projectpath=${framework.dir}/src/VB/Framework.jba"/>
+			<arg value = "-d=${build.dir}"/>
+		</exec>
+
+		<!-- create the framework documentation -->
+		<javadoc sourcepath="${src.dir}"
+					destdir="${doc.dir}"
+					author="true"
+					version="true"
+					access="public"
+					docletpath="${doclet.path}"
+					doclet="com.jbcdoclet.JBCDoclet">
+			<classpath>
+				<pathelement path="${java.class.path}/" />
+				<pathelement path="${extlib.dir}" />
+			</classpath>
+		</javadoc>
+
+
+		<!-- copy lib to working directory -->
+		<copy todir="${build.dir}">
+			<fileset dir="${extlib.dir}">
+				<include name="**/*" />
+			</fileset>
+
+			<fileset dir="${src.dir}">
+				<include name="**/VBA/cursors/*.gif" />
+			</fileset>
+		</copy>
+
+		<!-- create the jabaco - jar -->
+		<jar jarfile="${bin.dir}/${name}.jar" manifest="${manifest}">
+			<fileset dir="${build.dir}" />
+		</jar>
+
+		<delete dir="${build.dir}" />
+
+	</target>
+
+	<!-- cleanup  -->
+	<target name="clean">
+		<delete dir="${bin.dir}" failonerror="false" />
+		<delete dir="${build.dir}" failonerror="false" />
+		<delete dir="${doc.dir}" failonerror="false" />
+		<delete> 
+			<fileset dir="." includes="**/*~" defaultexcludes="no"/>
+		</delete>
+	</target>
+	
+</project>
